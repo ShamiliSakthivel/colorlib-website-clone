@@ -1,0 +1,208 @@
+﻿<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <link href="~/wwwroot/lib/bootstrap-5.3.2-dist/css/bootstrap.css" rel="stylesheet" />
+    <link href="~/wwwroot/lib/bootstrap-5.3.2-dist/css/bootstrap.min.css" rel="stylesheet" />
+    <link href="~/wwwroot/lib/bootstrap-5.3.2-dist/css/bootstrap.rtl.css" rel="stylesheet" />
+    <link href="~/wwwroot/lib/bootstrap-5.3.2-dist/css/bootstrap.rtl.min.css" rel="stylesheet" />
+    <script src="~/wwwroot/lib/bootstrap-5.3.2-dist/js/bootstrap.bundle.js"></script>
+    <script src="~/wwwroot/lib/bootstrap-5.3.2-dist/js/bootstrap.bundle.min.js"></script>
+    <script src="~/wwwroot/lib/bootstrap-5.3.2-dist/js/bootstrap.esm.js"></script>
+    <script src="~/wwwroot/lib/bootstrap-5.3.2-dist/js/bootstrap.esm.min.js"></script>
+    <script src="~/wwwroot/lib/bootstrap-5.3.2-dist/js/bootstrap.js"></script>
+    <script src="~/wwwroot/lib/bootstrap-5.3.2-dist/js/bootstrap.min.js"></script>
+    <title>@ViewBag.Title</title>
+    <style>
+      
+        .header {
+            background-color: blueviolet;
+            height:650px;
+            margin-top:20px;
+        }
+
+        .menu {
+            list-style-type: none;
+            font-weight: 500;
+            padding: 0;
+        }
+
+            .menu li {
+                display: inline-block;
+                margin: 0 10px;
+                text-decoration: none;
+                color: white;
+                font-weight: 500;
+                padding-left: 10px;
+                padding-right: 10px;
+                padding-bottom: 1rem;
+                padding-top: 10px;
+                font-size: 15px;
+                font-family: "Roboto", Arial, sans-serif;
+            }
+
+        .ss {
+            margin: 20px;
+            margin-left: 20px;
+            text-align: left;
+            margin-right: 400px;
+            font-weight: 500;
+            font-size: 24px;
+            font-family: Roboto, Arial, sans-serif;
+        }
+
+        .content, h1 {
+            text-align: left;
+            color: white;
+            font-size: 40px;
+            font-weight: 700;
+            line-height: 1.2;
+        }
+
+        .para {
+            font-family: "Roboto", Arial, sans-serif;
+            font-size: 16px;
+            line-height: 1.8;
+            font-weight: 400;
+        }
+
+        .main-div {
+            background-color: #e0e8f4;
+            display: flex;
+            justify-content: space-between;
+            padding: 20px;
+        }
+
+        .columns {
+            flex: 1;
+            padding: 10px;
+            color:gray;
+        }
+
+        h3 {
+            font-size: 18px;
+            color: blue;
+        }
+
+        h4 {
+            color: black;
+        }
+
+        .content-list {
+            list-style-type: none;
+            padding: 0;
+            color: gray;
+            font-family: "Roboto", Arial, sans-serif;
+        }
+
+            .content-list li {
+                margin-bottom: 5px;
+                color: gray;
+                font-family: "Roboto", Arial, sans-serif;
+            }
+
+        .quick-links li {
+            list-style: none;
+            color: gray;
+            font-family: "Roboto", Arial, sans-serif;
+            font-size: 16px;
+            line-height: 1.8;
+            font-weight: 400;
+        }
+
+        .recent-posts img {
+            width: 50px;
+            height: 50px;
+            margin-right: 10px;
+            color: gray;
+            font-family: "Roboto", Arial, sans-serif;
+            font-size: 16px;
+            line-height: 1.8;
+            font-weight: 400;
+        }
+
+        .footer {
+            background-color: #553be6;
+            color: white;
+            text-align: center;
+            padding: 20px;
+            font-size: 14px;
+        }
+
+        .heart {
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    
+    <div class="header">
+        <ul class="menu">
+            <li class="ss" style=" margin-right: 400px;">Unbrew.</li>
+            <li>Home</li>
+            <li>About Us</li>
+            <li>Services</li>
+            <li>Pricing</li>
+            <li>Work</li>
+            <li>Block</li>
+            <li>Contact Us</li>
+        </ul>
+    <div>
+        @RenderBody()
+    </div>
+        <div class="main-div">
+            <div class="columns">
+                <h3>Unbrew</h3>
+                <p>A small river named Duden flows by their place and supplies it with the necessary regelialia.</p>
+            </div>
+            <div class="columns">
+                <h4>Explore</h4>
+                <ul class="content-list">
+                    <li>About Us</li>
+                    <li>Service</li>
+                    <li>Works</li>
+                    <li>Blog</li>
+                    <li>Contact Us</li>
+                </ul>
+            </div>
+            <div class="columns">
+                <h4>Quick Links</h4>
+                <ul class="quick-links">
+                    <li>Contact Us</li>
+                    <li>Pricing</li>
+                    <li>Terms & Conditions</li>
+                    <li>Privacy</li>
+                    <li>Feedbacks</li>
+                </ul>
+            </div>
+            <div class="columns">
+                <h4>Recent Posts</h4>
+                <div class="recent-posts">
+                    <div>
+                        <img src="https://preview.colorlib.com/theme/unbrew/images/image_1.jpg.webp" alt="Post 1">
+                        <p>Creative and inspiration</p>
+                    </div>
+                    <div>
+                        <img src="https://preview.colorlib.com/theme/unbrew/images/image_2.jpg.webp" alt="Post 2">
+                        <p>Creative and inspiration</p>
+                    </div>
+                    <div>
+                        <img src="https://preview.colorlib.com/theme/unbrew/images/image_4.jpg.webp" alt="Post 3">
+                        <p>Creative and inspiration</p>
+                    </div>
+                </div>
+            </div>
+            <div class="columns">
+                <h4>Have a Question?</h4>
+                <p>203 Fake St. Mountain View, San Francisco, California, USA.</p>
+                <p>+2 3293929210</p>
+                <p>info2yourdomain.com</p>
+            </div>
+        </div>
+        <div class="footer">
+            <p>&copy; 2024 All Rights Reserved | This template is made with <span class="heart">&#128153;</span> by Colorlib</p>
+        </div>
+    </div>
+</body>
+</html>

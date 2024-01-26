@@ -1,0 +1,499 @@
+﻿@*
+    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
+*@
+@{
+    Layout = "_Layout";
+}
+<head>
+   
+
+<style>
+    .header {
+        background-color: blueviolet;
+        height: 550px;
+    }
+
+    .menu {
+        list-style-type: none;
+        font-weight: 500;
+        padding: 0;
+    }
+
+        .menu li {
+             display: inline-block; 
+            margin: 0 10px;
+            text-decoration: none;
+            color: white;
+            font-weight: 500;
+            padding-left: 10px;
+            padding-right: 10px;
+            padding-bottom: 1rem;
+            padding-top: 10px;
+            font-size: 15px;
+            font-family: "Roboto", Arial, sans-serif;
+        }
+
+    .content, h1 {
+        text-align: left;
+        color: white;
+        font-size: 40px;
+        font-weight: 700;
+        line-height: 1.2;
+    }
+
+    .para {
+        font-family: "Roboto", Arial, sans-serif;
+        font-size: 16px;
+        line-height: 1.8;
+        font-weight: 400;
+    }
+
+    .col2, img {
+        height: 400px;
+        width: 500px;
+    }
+
+    .ss {
+        margin: 20px;
+        margin-left: 20px;
+        text-align: left;
+        margin-right: 400px;
+        font-weight: 500;
+        font-size: 24px;
+        font-family: Roboto, Arial, sans-serif;
+    }
+
+    .custom-column {
+        background-color: #ffffff;
+        padding: 20px;
+        margin-bottom: 20px;
+        color: black;
+        align-content: center;
+    }
+
+    .number {
+        font-size: 24px;
+    }
+
+    .section {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-bottom: 40px;
+    }
+
+    .image-left img {
+        max-width: 100%;
+        display: block;
+        margin-bottom: 10px;
+        /* max-width: 100%; */
+        height: auto;
+    }
+
+    .content-right {
+        flex: 1;
+        text-align: left;
+        margin-left: 40px;
+    }
+
+    .picture-grid {
+        display: flex;
+    }
+
+    .column {
+        flex: 1;
+        padding: 5px;
+        text-align: center;
+    }
+
+
+        .column img {
+            max-width: 100%;
+            height: auto;
+        }
+
+    .container {
+        max-width: 1200px;
+        margin: 0 auto;
+        padding: 20px;
+        text-align: center;
+    }
+
+    .about-us-section {
+        margin-bottom: 400px;
+    }
+
+
+    .section {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-bottom: 40px;
+    }
+
+    .image-left img {
+        max-width: 100%;
+        display: block;
+        margin-bottom: 10px;
+        max-width: 100%;
+        height: auto;
+    }
+
+    .content-right {
+        flex: 1;
+        text-align: left;
+        margin-left: 40px;
+    }
+
+    .container {
+        display: flex;
+        flex-direction: row;
+        height: 300px;
+        margin-top: 0px;
+    }
+
+    .column {
+        flex: 1;
+        border: 1px solid #000;
+        padding: 10px;
+        margin: 5px;
+    }
+
+    .columns {
+        font-family: 'Roboto', sans-serif;
+        font-weight: 400;
+        color: #88879e;
+    }
+
+    .blue-background {
+        background-color: blue;
+        color: white;
+        font-size: 20px;
+        font-weight: 500;
+        line-height: 1.5;
+        font-family: "Roboto", Arial, sans-serif;
+        margin-left: 30px;
+    }
+
+    .textbox {
+        width: 100%;
+        padding: 10px;
+        /* border: 1px solid #ccc;
+                        border-radius: 4px; */
+        margin-top: 10px;
+    }
+
+        .textbox:focus {
+            outline: none;
+        }
+
+    .main-div {
+        background-color: #e0e8f4;
+        display: flex;
+        justify-content: space-between;
+        padding: 20px;
+    }
+
+    .columns {
+        flex: 1;
+        padding: 10px;
+    }
+
+    h3 {
+        font-size: 18px;
+        color: blue;
+    }
+
+    h4 {
+        color: black;
+    }
+
+    .content-list {
+        list-style-type: none;
+        padding: 0;
+        color: gray;
+        font-family: "Roboto", Arial, sans-serif;
+    }
+
+        .content-list li {
+            margin-bottom: 5px;
+            color: gray;
+            font-family: "Roboto", Arial, sans-serif;
+        }
+
+    .quick-links li {
+        list-style: none;
+        color: gray;
+        font-family: "Roboto", Arial, sans-serif;
+        font-size: 16px;
+        line-height: 1.8;
+        font-weight: 400;
+    }
+
+    .recent-posts img {
+        width: 50px;
+        height: 50px;
+        margin-right: 10px;
+        color: gray;
+        font-family: "Roboto", Arial, sans-serif;
+        font-size: 16px;
+        line-height: 1.8;
+        font-weight: 400;
+    }
+
+    .footer {
+        background-color: #553be6;
+        color: white;
+        text-align: center;
+        padding: 20px;
+        font-size: 14px;
+    }
+
+    .heart {
+        color: white;
+    }
+</style>
+</head>
+<body>
+    <div class="header" style="display:flex";>
+       
+        <div class="content" style="display:flex">
+            <div class="row" style="display:flex">
+                <div class="col 1">
+                    <h1>
+                        <pre>   
+  Boost Personal
+  Productivity</pre>
+                    </h1>
+
+
+                    <p>
+                        <pre class="para">
+        A small river named Duden flows by their place and supplies it
+        with the necessary regelialia.</pre>
+                    </p>
+
+                </div>
+                <div class="col 2">
+                    <img src="https://preview.colorlib.com/theme/unbrew/images/bg_1.svg" />
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+    <br />
+    <br />
+    <br />
+    <div class="container-fluid" >
+        <div class="row" style="display:flex">
+
+
+            <div class="col-md-2 custom-column" >
+                <img src="data:image/jpeg;base64,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" style="width:100%;height:200px; " />
+            </div>
+
+
+            <div class="col-md-2 custom-column">
+                <h1 style="text-align:center;color:#1fb6fc;">900+</h1>
+                <p style="text-align:center;margin-top:10px">PROJECT DONE</p>
+            </div>
+
+            <div class="col-md-2 custom-column">
+                <h1 style="text-align:center;color:#1fb6fc;">500+</h1>
+                <p style="text-align:center;margin-top:10px">OPTIMIZE SITES</p>
+            </div>
+
+            <div class="col-md-2 custom-column">
+                <h1 style="text-align:center;color:#1fb6fc;">770+</h1>
+                <p style="text-align:center;margin-top:10px">COFFEE CUPS</p>
+            </div>
+
+            <div class="col-md-2 custom-column">
+                <h1 style="text-align:center;color:#1fb6fc;">1000+</h1>
+                <p style="text-align:center;margin-top:10px">HAPPY PEOPLE</p>
+            </div>
+
+
+        </div>
+    </div>
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <div class="section">
+        <div class="image-left">
+            <img src="https://preview.colorlib.com/theme/unbrew/images/about.svg" style="width:500px;
+    height: auto" alt="Image 1">
+        </div>
+        <div class="content-right">
+            <h4>ABOUT US</h4>
+            <h2 style="font-size: 40px;
+    font-weight: 400;
+    line-height: 1.4">
+                Unbrew A Digital Agency
+                Company
+            </h2>
+            <p style="font-family:  Roboto, Arial, sans-serif;
+                   background: #fff;
+                   font-size: 16px;
+                   line-height: 1.8;
+                   font-weight: 400;
+                   color: #88879e;">
+                Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. Separated they live in Bookmarksgrove right at the coast of the Semantics, a large language ocean.
+
+                A small river named Duden flows by their place and supplies it with the necessary regelialia. It is a paradisematic country, in which roasted parts of sentences fly into your mouth.
+            </p>
+        </div>
+    </div>
+    <div class="teams">
+        <h4 style="color:#1fb6fc;text-align:center">Teams</h4>
+        <h1 style="color:black;text-align:center;font-size: 40px;
+    font-weight: 400;
+    line-height: 1.4;">
+            Our Digital Experts Team
+        </h1>
+        <p style="margin-top: 0;
+    margin-bottom: 1rem;text-align: center">
+            <pre style="margin-top: 0;
+    margin-bottom: 1rem;text-align: center;font-family:  Roboto , Arial, sans-serif;font-size: 16px;line-height: 1.8;
+    font-weight: 400;
+    color: #88879e;"> Far far away, behind the word mountains, far from the countries Vokalia and Consonantia,</pre>
+            <pre style="margin-top: 0;
+    margin-bottom: 1rem;text-align: center;font-family:  Roboto, Arial, sans-serif;font-size: 16px;line-height: 1.8;
+    font-weight: 400;
+    color: #88879e;"> there live the blind texts. Separated they live in Bookmarksgrove.</pre>
+        </p>
+    </div>
+    <div class="picture-grid">
+        <div class="column">
+            <img src="https://preview.colorlib.com/theme/unbrew/images/team-1.jpg.webp" style="padding-bottom:30px" />
+            <h4 styles="font-size: 20px;font-weight: 500;line-height: 1.5;color: #2a3a60;text-align: center;">
+                Adrian Molises
+            </h4>
+            <h6 styles="text-align:center; font-family: Roboto , Arial, sans-serif; background: #fff; font-size: 10px;line-height: 1.8; font-weight: 400px; color: #88879e;">
+                CEO, Founder & Developer
+            </h6>
+        </div>
+        <div class="column">
+            <img src="https://preview.colorlib.com/theme/unbrew/images/team-2.jpg.webp" style="height:350px" />
+            <h4 styles="font-size: 20px;font-weight: 500;line-height: 1.5;color: #2a3a60;text-align: center;">
+                Arthur MaGregor
+            </h4>
+            <h6 styles="text-align:center; font-family: Roboto , Arial, sans-serif; background: #fff; font-size: 10px;line-height: 1.8; font-weight: 400px; color: #88879e;">
+                CEO, Founder & Developer
+            </h6>
+        </div>
+        <div class="column">
+            <img src="https://preview.colorlib.com/theme/unbrew/images/team-3.jpg.webp" style="height:345px" />
+            <h4 styles="font-size: 20px;font-weight: 500;line-height: 1.5;color: #2a3a60;text-align: center;">
+                Anna Hanzen
+            </h4>
+            <h6 styles="text-align:center; font-family: Roboto , Arial, sans-serif; background: #fff; font-size: 10px;line-height: 1.8; font-weight: 400px; color: #88879e;">
+                CEO, Founder & Developer
+            </h6>
+        </div>
+        <div class="column">
+            <img src="https://preview.colorlib.com/theme/unbrew/images/team-4.jpg.webp" style="height:350px" />
+            <h4 styles="font-size: 20px;font-weight: 500;line-height: 1.5;color: #2a3a60;text-align: center;">
+                Brian Wooden
+            </h4>
+            <h6 styles="text-align:center; font-family: Roboto , Arial, sans-serif; background: #fff; font-size: 10px;line-height: 1.8; font-weight: 400px; color: #88879e;">
+                CEO, Founder & Developer
+            </h6>
+        </div>
+    </div>
+   
+
+
+    <div class="PRICING" style="margin-top:300px;margin-bottom:40px;padding-top:10px;background-color: #553be6";>
+        <h4 style="color:#1fb6fc;text-align:center;">Teams</h4>
+        <h1 style="color:black;text-align:center;font-size: 40px;
+    font-weight: 400;
+    line-height: 1.4;">
+            WHY CHOOSE US
+        </h1>
+        <p style="margin-top: 0;
+    margin-bottom: 1rem;text-align: center">
+            <pre style="margin-top: 0;
+    margin-bottom: 1rem;text-align: center;font-family:  Roboto , Arial, sans-serif;font-size: 16px;line-height: 1.8;
+    font-weight: 400;
+    color: black;"> Far far away, behind the word mountains, far from the countries Vokalia and Consonantia,</pre>
+            <pre style="margin-top: 0;
+    margin-bottom: 1rem;text-align: center;font-family:  Roboto, Arial, sans-serif;font-size: 16px;line-height: 1.8;
+    font-weight: 400;
+    color: black; height:40px;"> there live the blind texts. Separated they live in Bookmarksgrove.</pre>
+        </p>
+
+
+        <div class="container">
+
+            <div class="column" style="background-color:whitesmoke;height:300px">
+                <h2>Easy Management</h2>
+                <p>
+                    A small river named Duden flows by
+                    their place and supplies it with
+                    the necessary regelialia. It is a
+                    paradisematic country, in which
+                    roasted parts of sentences fly
+                    into your mouth.
+                </p>
+            </div>
+            <div class="column" style="background-color:whitesmoke;height:300px">
+                <h2>Easy Management</h2>
+                <p>
+                    A small river named Duden flows by
+                    their place and supplies it with
+                    the necessary regelialia. It is a
+                    paradisematic country, in which
+                    roasted parts of sentences fly
+                    into your mouth.
+                </p>
+            </div>
+            <div class="column" style="background-color:whitesmoke;height:300px">
+                <h2>Easy Management</h2>
+                <p>
+                    A small river named Duden flows by
+                    their place and supplies it with
+                    the necessary regelialia. It is a
+                    paradisematic country, in which
+                    roasted parts of sentences fly
+                    into your mouth.
+                </p>
+            </div>
+            <div class="column" style="background-color:whitesmoke;height:300px">
+                <h2>Easy Management</h2>
+                <p>
+                    A small river named Duden flows by
+                    their place and supplies it with
+                    the necessary regelialia. It is a
+                    paradisematic country, in which
+                    roasted parts of sentences fly
+                    into your mouth.
+                </p>
+            </div>
+        </div>
+    </div>
+    <div>
+        <p>
+            <pre style="margin-top: 0;
+    margin-bottom: 1rem;text-align: center;font-family:  Roboto , Arial, sans-serif;font-size: 16px;line-height: 1.8;
+    font-weight: 400;
+    color: black;"> Far far away, behind the word mountains, far from the countries Vokalia and Consonantia,</pre>
+
+        </p>
+    </div>
+    <div class="columns">
+        <div class="column blue-background">
+            <h2>Newsletter</h2>
+            <p>Stay tuned and get the latest updates.</p>
+            <p>Far far away, behind the word mountains.</p>
+
+            <div class="columns" style="background-color: blue;">
+                <input type="text" class="textbox" placeholder="Enter email address">
+            </div>
+        </div>
+        <!-- Your other columns here -->
+    </div>
+ </body>

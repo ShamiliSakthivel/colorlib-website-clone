@@ -1,0 +1,185 @@
+﻿@*
+    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
+*@
+@{
+    Layout = "_Layout";
+}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <style>
+        body {
+            font-family: 'Roboto', sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+
+        .container {
+            text-align: center;
+            margin-top: 200px;
+            margin-bottom: 300px;
+        }
+
+        .about-us-section h2 {
+            font-weight: 300;
+            color: #fff;
+            font-size: 60px;
+            margin-right: 60px;
+            text-align: center;
+        }
+
+        .PRICING,h3 {
+            text-align: center;
+            color: #1fb6fc;
+        }
+       
+            .PRICING h1 {
+                color: black;
+                font-size: 40px;
+                font-weight: 400;
+                line-height: 1.4;
+                text-align: center;
+
+            }
+
+            .PRICING pre {
+                margin-top: 0;
+                margin-bottom: 1rem;
+                text-align: center;
+                font-family: 'Roboto', Arial, sans-serif;
+                font-size: 16px;
+                line-height: 1.8;
+                font-weight: 400;
+                color: #88879e;
+            }
+
+        .columnss {
+            display: flex;
+            margin-top: 30px;
+        }
+
+        .column {
+            flex: 1;
+            padding: 30px;
+            border-radius: 4px;
+            font-family: 'Roboto', sans-serif;
+            font-weight: 400;
+            color: #88879e;
+        }
+
+        .first-column {
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+        }
+
+        .button {
+            background-color: deepskyblue;
+            color: white;
+            border: none;
+            padding: 10px;
+            border-radius: 3px;
+            cursor: pointer;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 16px;
+            margin-top: 20px;
+        }
+
+        .blue-background {
+            background-color: blue;
+            color: white;
+            font-size: 20px;
+            font-weight: 500;
+            line-height: 1.5;
+            font-family: 'Roboto', Arial, sans-serif;
+            margin-left: 30px;
+        }
+
+        .textbox {
+            width: 100%;
+            padding: 10px;
+            margin-top: 10px;
+        }
+
+            .textbox:focus {
+                outline: none;
+            }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="about-us-section">
+            <h2>
+                Price & Plans
+            </h2>
+        </div>
+    </div>
+    <br />
+    <br />
+    <br />
+    <div class="PRICING">
+        <h3>Teams</h3>
+        <h1>
+            Choose Your Pricing Plan
+        </h1>
+        <p>
+            <pre> Far far away, behind the word mountains, far from the countries Vokalia and Consonantia,</pre>
+            <pre> there live the blind texts. Separated they live in Bookmarksgrove.</pre>
+        </p>
+    </div>
+     <div class="columnss">
+        <div class="column first-column">
+            <p>49</p>
+            <p>Personal</p>
+            <p>&#10003; Strategic Alliance</p>
+            <p>&#10003; Growth Expansion</p>
+            <p>&#10003; Business Planning</p>
+            <p>&#10003; Contact Negotiation</p>
+            <p>&#10003; Market Positioning</p>
+            <a href="#" class="button">Get Started</a>
+        </div>
+        <div class="column first-column">
+            <p>79</p>
+            <p>PROFESSIONAL</p>
+            <p>&#10003; Strategic Alliance</p>
+            <p>&#10003; Growth Expansion</p>
+            <p>&#10003; Business Planning</p>
+            <p>&#10003; Contact Negotiation</p>
+            <p>&#10003; Market Positioning</p>
+            <a href="#" class="button">Get Started</a>
+        </div>
+        <div class="column first-column">
+            <p>109</p>
+            <p>MEDIUM BUSINESS</p>
+            <p>&#10003; Strategic Alliance</p>
+            <p>&#10003; Growth Expansion</p>
+            <p>&#10003; Business Planning</p>
+            <p>&#10003; Contact Negotiation</p>
+            <p>&#10003; Market Positioning</p>
+            <a href="#" class="button">Get Started</a>
+        </div>
+        <div class="column first-column">
+            <p>149</p>
+            <p>GIGANTIC BUSINESS</p>
+            <p>&#10003; Strategic Alliance</p>
+            <p>&#10003; Growth Expansion</p>
+            <p>&#10003; Business Planning</p>
+            <p>&#10003; Contact Negotiation</p>
+            <p>&#10003; Market Positioning</p>
+            <a href="#" class="button">Get Started</a>
+        </div>
+    </div> 
+    <div class="columnss">
+        <div class="column blue-background">
+            <h2>Newsletter</h2>
+            <p>Stay tuned and get the latest updates.</p>
+            <p>Far far away, behind the word mountains.</p>
+        </div>
+        <div class="column" style="background-color: blue;">
+            <input type="text" class="textbox" placeholder="Enter email address">
+        </div>
+    </div> 
+</body>
+</html>
